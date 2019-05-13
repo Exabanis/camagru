@@ -70,7 +70,7 @@ error_reporting(E_ALL);
 </head>
 <body>
         <?php
-            if ($result){
+            if ($result != null){
                 foreach ($result as $row) {
                     ?><img id="e1" src=<?= $row['image']; ?> width="98%" height="auto"><?php
                     if(isset($_SESSION['id'])){
